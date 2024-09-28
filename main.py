@@ -57,7 +57,7 @@ def main():
         driver = setup_web_driver()
         driver.get(GFROM_URL)
 
-        radio_question_fixed_answer(driver, "1676635795", 1)
+        radio_question_fixed_answer(driver, "1676635795", 0)
         next_page_button(driver)
 
         name = ''.join(random.choices(string.ascii_uppercase, k=2))
@@ -66,7 +66,7 @@ def main():
 
         random_age = str(random.randint(20, 24))
         text_question(driver, "Usia", random_age)
-        radio_question_fixed_answer(driver, "Fakultas", 7)
+        radio_question_fixed_answer(driver, "Fakultas", 6)
         text_question(driver, "Jurusan / Program studi", "Teknik Informatika")
         radio_question(driver, "Apakah Saudara pernah mengikuti program magang ?")
         radio_question(driver, "Apakah Saudara pernah mengikuti pelatihan/ seminat terkait dengan karir ?")
